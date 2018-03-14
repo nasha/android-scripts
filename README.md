@@ -1,8 +1,10 @@
 # Android-Scripts
 
-# TODO
-Script's task
-- To copy assets for e.g. (ic_launcher.png) from ~/Downloads to ANDROID-PROJECT/res/mipmaps
-- based on the density of the asset (xdpi, xxdpi,...)
-- At the moment I have to do this manually
-- Takes arguments (source folder, destination folder, filename)
+# android_res_move.py
+- Takes in 3 arguments
+- source folder path containing the sub folders (e.g. mdpi, ldpi, ..)
+- destination folder path (where you want to copy the files)
+  - if it does not find the sub folder created, it will create them
+- filename (e.g. "ic_push.png")
+- Run
+  - python android_res_move.py [SOURCE] [DEST] [FILENAME]
